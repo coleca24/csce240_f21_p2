@@ -28,6 +28,23 @@ Your SuperString object is already defined for you in the `SuperString.h` file i
 - `~SuperString()`: Should deallocate the data array
 
 ## SuperString Member Functions
+- `void print()`: prints the contents of your array - Already implemented **DO NOT MODIFY**
+- `char get(int)`: Extracts an element from your `data` array. - Already implemented **DO NOT MODIFY**
+- `int find(char, int start = 0)`
+- `int find(std::string, int start = 0)`
+- `int length()`
+- `SuperString substr(int, int)`
+- `SuperString reverse(const SuperString&)`
+- `SuperString replace(int, int, std::string)`
+- `void push_back(char)`
+- `void append(std::string)`
+- `void append(const SuperString&)`
+- `SuperString replace(char, char)`
+- `SuperString replace(std::string, std::string)`
+- `SuperString replace(char, std::string)`
+- `bool isUpper()`
+- `bool isLower()`
+- `bool isTitleCase()`
 
 ## Timing of Commits
 ### Commit #1 Due 9/29 by Midnight
@@ -50,3 +67,11 @@ Functions to complete:
 4. `void append(std::string);`
 5. `void append(const SuperString&);`
 6. `bool removeAll(char);`
+
+### Extra Credit Due 10/6 by Midnight
+1. `SuperString replace(char, char);`
+2. `SuperString replace(std::string, std::string);`
+3. `SuperString replace(char, std::string);`
+4. `bool isUpper();`
+5. `bool isLower();`
+6. `bool isTitleCase();`
