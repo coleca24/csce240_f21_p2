@@ -21,9 +21,9 @@ class SuperString {
 
     // Member Functions
     void print();
+    char get(int);
    //  int find(char, int start = 0);
    //  int find(std::string, int start = 0);
-   //  char get(int);
    //  int length();
    //  SuperString substr(int, int);
 
