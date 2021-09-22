@@ -11,7 +11,7 @@
 class SuperString {
  public:
     // Constructors
-    SuperString();
+   //  SuperString();
    //  explicit SuperString(std::string);
    //  SuperString(int, char);
    //  SuperString(const SuperString&);
