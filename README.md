@@ -3,11 +3,11 @@ In this project, you will be creating your own string class (called SuperString)
 
 Your SuperString object is already defined for you in the `SuperString.h` file in your GitHub repo. Below I will describe more details about all of the variables and functions. **Make sure that you read this all the way through before starting! There is important information at the end about how to run the code!**
 
-SuperString member variables: 
+## SuperString member variables: 
 - `char *data`: a dynamic pointer array that holds each character of the string within that SuperString object
 - `int size`: the size of the `data` array (how many characters it holds)
 
-SuperString Constructors: 
+## SuperString Constructors: 
 - `SuperString()`: The default constructor. Should: 
   - set `size` to 0 
   - allocate the `data` array to a new char array of size `size`
@@ -19,7 +19,34 @@ SuperString Constructors:
   - set `size` to the value of the int passed in 
   - allocate the `data` array to a new char array of size `size`
   - fill all contents of the `data` array with the character passed in
-- SuperString(const SuperString&): Copy Constructor. Should: 
+- `SuperString(const SuperString&)`: Copy Constructor. Should: 
   - set `size` to the size of the object passed in 
   - allocate the `data` array to a new char array of size `size`
   - fill all contents of the `data` array with the same contents as the passed object's data
+
+## SuperString Destructor: 
+- `~SuperString()`: Should deallocate the data array
+
+## SuperString Member Functions
+
+## Timing of Commits
+### Commit #1 Due 9/29 by Midnight
+Functions to complete: 
+1. `SuperString();`
+2. `explicit SuperString(std::string);`
+3. `SuperString(int, char);`
+4. `SuperString(const SuperString&);`
+5. `~SuperString();`
+6. `int length();`
+7. `int find(char, int start = 0);`
+8. `int find(std::string, int start = 0);`
+9. `SuperString substr(int, int);`
+
+### Commit #1 Due 10/6 by Midnight
+Functions to complete:
+1. `SuperString reverse(const SuperString&);`
+2. `SuperString replace(int, int, std::string);`
+3. `void push_back(char);`
+4. `void append(std::string);`
+5. `void append(const SuperString&);`
+6. `bool removeAll(char);`
