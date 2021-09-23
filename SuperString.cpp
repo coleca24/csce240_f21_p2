@@ -19,6 +19,10 @@ char SuperString::get(int index) {
     }
     return '\0';
 }
+
+int SuperString::length() {
+    return size;
+}
 // DO NOT MODIFY END
 
 // PUT YOUR CODE BELOW!
