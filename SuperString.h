@@ -22,9 +22,10 @@ class SuperString {
     // Member Functions
     void print();
     char get(int);
+    int length();
    //  int find(char, int start = 0);
    //  int find(std::string, int start = 0);
-   //  int length();
+   
    //  SuperString substr(int, int);
 
    //  SuperString reverse();
