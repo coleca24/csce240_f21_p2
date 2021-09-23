@@ -30,6 +30,7 @@ Your SuperString object is already defined for you in the `SuperString.h` file i
 ## SuperString Member Functions
 - `void print()`: prints the contents of your array - Already implemented **DO NOT MODIFY**
 - `char get(int)`: Extracts an element from your `data` array. - Already implemented **DO NOT MODIFY**
+- `int length()`: returns the `size`. - Already implemented **DO NOT MODIFY**
 - `int find(char, int start = 0)`
   - returns the index of the *first* instance of the character passed in the `data` array starting at index `start` 
   - returns -1 if the character does not exist. 
@@ -40,8 +41,6 @@ Your SuperString object is already defined for you in the `SuperString.h` file i
   - returns -1 if the character does not exist. 
   - Ex. obj.data = "that cat is a cool cat" then obj.find("cat", 0) == 5
   - Ex. obj.data = "that cat is a cool cat" then obj.find("cat", 6) == 19
-- `int length()`
-  - returns the `size` variable
 - `SuperString substr(int start, int numChar)`
   - returns a `SuperString` object that contains the substring of the calling object's data starting at index `start` and spanning the number of characters held in `numChar`
   - Contents of the returned object should be size 0 if no substring is able to be extracted. This would happen if a user gave an index that was out of bounds. 
@@ -95,10 +94,9 @@ Functions to complete:
 3. `SuperString(int, char);`
 4. `SuperString(const SuperString&);`
 5. `~SuperString();`
-6. `int length();`
-7. `int find(char, int start = 0);`
-8. `int find(std::string, int start = 0);`
-9. `SuperString substr(int, int);`
+6. `int find(char, int start = 0);`
+7. `int find(std::string, int start = 0);`
+8. `SuperString substr(int, int);`
 
 ### Commit #2 Due 10/6 by Midnight
 Functions to complete:
@@ -168,11 +166,10 @@ See the Testing.md file (https://github.com/coleca24/csce240_f21_p2/blob/main/Te
 2. `explicit SuperString(std::string);`           - 1 points
 3. `SuperString(int, char);`                      - 1 points 
 4. `SuperString(const SuperString&);`             - 2 points
-5. `~SuperString();`                              - 1 point
-6. `int length();`                                - 1 point 
-7. `int find(char, int start = 0);`               - 2 point
-8. `int find(std::string, int start = 0);`        - 3 points
-9. `SuperString substr(int, int);`                - 3 points
+5. `~SuperString();`                              - 2 points
+6. `int find(char, int start = 0);`               - 2 point
+7. `int find(std::string, int start = 0);`        - 3 points
+8. `SuperString substr(int, int);`                - 3 points
 
 ### Commit #2 Due 10/6 by Midnight - 25 points
 1. `SuperString reverse(const SuperString&);`     - 3 points
