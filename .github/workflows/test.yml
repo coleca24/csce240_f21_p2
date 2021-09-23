@@ -24,6 +24,7 @@ jobs:
         cmake --build build --config Debug
     - name: Test
       run: |
+        cd build
         ./proj2
     - name: valgrind
       run: |
