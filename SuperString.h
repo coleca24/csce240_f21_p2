@@ -32,7 +32,7 @@ class SuperString {
    //  void push_back(char);
    //  void append(std::string);
    //  void append(const SuperString&);
-   //  bool removeAll(char);
+   //  void removeAll(char);
 
    // Extra Credit
    //  void replace(char, char);
