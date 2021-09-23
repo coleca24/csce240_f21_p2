@@ -65,10 +65,8 @@ Your SuperString object is already defined for you in the `SuperString.h` file i
 - `void append(const SuperString&)`
   - Appends the content of the passed `SuperString` to the end of the `data` array of the calling object
   - Ex. obj.data = "hello" and obj2.data = " world" then obj.append(obj2) -> obj.data == "hello world"
-- `bool removeAll(char)`
+- `void removeAll(char)`
   - Removes all of the instances of the character that is passed in is in the `data` array
-  - Returns true if replacement was successful (character(s) is/are found and removed)
-  - Returns false if character does not exist in the string
   - Ex. obj.data = "hello" then obj.removeAll('l') -> obj.data == "heo"
 
 Extra Credit Functions:
