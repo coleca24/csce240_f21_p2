@@ -65,13 +65,15 @@ Your SuperString object is already defined for you in the `SuperString.h` file i
 - `void append(const SuperString&)`
   - Appends the content of the passed `SuperString` to the end of the `data` array of the calling object
   - Ex. obj.data = "hello" and obj2.data = " world" then obj.append(obj2) -> obj.data == "hello world"
-- `void removeAll(char)`
-  - Removes all of the instances of the character that is passed in is in the `data` array
-  - Ex. obj.data = "hello" then obj.removeAll('l') -> obj.data == "heo"
+- `void replace(char find, char rep)`
+  - Replaces all instances of the character `find` in the calling object's `data` array with the `rep` character.
+  - Ex. obj.data = "catcat" then obj.replace('c', 't') -> obj.data = "tattat" 
+
 
 Extra Credit Functions:
-- `void replace(char find, char rep)`
-  - Replaces all instances of the character `find` in the calling object's `data` array with the `rep` character. 
+- `void removeAll(char)`
+  - Removes all of the instances of the character that is passed in is in the `data` array
+  - Ex. obj.data = "hello" then obj.removeAll('l') -> obj.data == "heo" 
 - `void replace(std::string, std::string)`
 - `void replace(char, std::string)`
 - `bool isUpper()`
