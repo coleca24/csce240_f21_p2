@@ -74,10 +74,18 @@ Extra Credit Functions:
 - `void removeAll(char)`
   - Removes all of the instances of the character that is passed in is in the `data` array
   - Ex. obj.data = "hello" then obj.removeAll('l') -> obj.data == "heo" 
-- `void replace(std::string, std::string)`
+- `void replace(std::string find, std::string sub)`
+  - Replaces all instance of a string `find` with the string `sub`
+  - Ex. obj.data = "this cat is a cool cat" then obj.replace("cat", "dog") -> obj.data = "this dog is a cool dog"
 - `bool isUpper()`
+  - Returns true if the `data` array contains all uppercase characters
+  - Returns false if the `data` array contains anything other than uppercase characters
 - `bool isLower()`
+  - Returns true if the `data` array contains all lowercase characters
+  - Returns false if the `data` array contains anything other than lowercase characters
 - `bool isTitleCase()`
+  - Returns true if the `data` array contains a sentence that is in proper "Title" case. 
+  - Returns false if the `data` array contains contains a sentence that is not in proper "Title" case. 
 
 ## Timing of Commits
 ### Commit #1 Due 9/30 by Midnight
@@ -92,7 +100,7 @@ Functions to complete:
 8. `int find(std::string, int start = 0);`
 9. `SuperString substr(int, int);`
 
-### Commit #1 Due 10/6 by Midnight
+### Commit #2 Due 10/6 by Midnight
 Functions to complete:
 1. `SuperString reverse(const SuperString&);`
 2. `SuperString replace(int, int, std::string);`
@@ -154,3 +162,31 @@ g++ -std=c++2a main-bonus.cpp SuperString.cpp -o proj1
 ```
 
 ## Grading Rubric
+See the Testing.md file (https://github.com/coleca24/csce240_f21_p2/blob/main/Testing.md) for breakdown per Google Test. 
+### Commit #1 Due 9/30 by Midnight - 15 points
+1. `SuperString();`                               - 1 point
+2. `explicit SuperString(std::string);`           - 1 points
+3. `SuperString(int, char);`                      - 1 points 
+4. `SuperString(const SuperString&);`             - 2 points
+5. `~SuperString();`                              - 1 point
+6. `int length();`                                - 1 point 
+7. `int find(char, int start = 0);`               - 2 point
+8. `int find(std::string, int start = 0);`        - 3 points
+9. `SuperString substr(int, int);`                - 3 points
+
+### Commit #2 Due 10/6 by Midnight - 25 points
+1. `SuperString reverse(const SuperString&);`     - 3 points
+2. `SuperString replace(int, int, std::string);`  - 5 points
+3. `void push_back(char);`                        - 4 points
+4. `void append(std::string);`                    - 5 points
+5. `void append(const SuperString&);`             - 5 points
+6. `SuperString replace(char, char);`             - 2 points
+
+1 point for cpplint
+
+### Extra Credit Due 10/6 by Midnight - 8 points total
+1. `bool removeAll(char);`                            + 2 point
+2. `SuperString replace(std::string, std::string);`   + 2 points
+3. `bool isUpper();`                                  + 1 point
+4. `bool isLower();`                                  + 1 point
+5. `bool isTitleCase();`                              + 2 point
