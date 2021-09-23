@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Style Checker
+name: Memory Checker
 
 # Controls when the workflow will run
 on:
@@ -14,21 +14,10 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
-
+  valgrind:
     runs-on: ubuntu-latest
     timeout-minutes: 3
-
     steps:
-    
     - uses: actions/checkout@v2
-    
-    - name: Configure
-      run: |
-        cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Debug
-    - name: Build
-      run: |
-        cmake --build build --config Debug
-    - name: Test
-      run: |
-        valgrind ./proj1-test
+    - run: g++ main-gtest.cpp SuperString.cpp -lpthread -lgtest
+    - run: valgrind ./a.out
