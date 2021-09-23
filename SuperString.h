@@ -35,9 +35,9 @@ class SuperString {
    //  bool removeAll(char);
 
    // Extra Credit
-   //  SuperString replace(char, char);
-   //  SuperString replace(std::string, std::string);
-   //  SuperString replace(char, std::string);
+   //  void replace(char, char);
+   //  void replace(std::string, std::string);
+   //  void replace(char, std::string);
    //  bool isUpper();
    //  bool isLower();
    //  bool isTitleCase();
