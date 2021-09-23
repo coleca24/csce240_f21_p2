@@ -11,36 +11,36 @@
 class SuperString {
  public:
     // Constructors
-   //  SuperString();
-   //  explicit SuperString(std::string);
-   //  SuperString(int, char);
-   //  SuperString(const SuperString&);
+    SuperString();
+    explicit SuperString(std::string);
+    SuperString(int, char);
+    SuperString(const SuperString&);
 
     // Destructor
-   //  ~SuperString();
+    ~SuperString();
 
     // Member Functions
     void print();
     char get(int);
     int length();
-   //  int find(char, int start = 0);
-   //  int find(std::string, int start = 0);
+    int find(char, int start = 0);
+    int find(std::string, int start = 0);
    
-   //  SuperString substr(int, int);
+    SuperString substr(int, int);
 
-   //  SuperString reverse();
-   //  SuperString replace(int, int, std::string);
-   //  void push_back(char);
-   //  void append(std::string);
-   //  void append(const SuperString&);
-   //  void replace(char, char);
+    SuperString reverse();
+    SuperString replace(int, int, std::string);
+    void push_back(char);
+    void append(std::string);
+    void append(const SuperString&);
+    void replace(char, char);
 
    // Extra Credit
-   //  void removeAll(char);
-   //  void replace(std::string, std::string);
-   //  bool isUpper();
-   //  bool isLower();
-   //  bool isTitleCase();
+    void removeAll(char);
+    void replace(std::string, std::string);
+    bool isUpper();
+    bool isLower();
+    bool isTitleCase();
 
  private:
     // Member Variables
