@@ -92,7 +92,7 @@ Functions to complete:
 8. `int find(std::string, int start = 0);`
 9. `SuperString substr(int, int);`
 
-### Commit #1 Due 10/12 by Midnight
+### Commit #1 Due 10/6 by Midnight
 Functions to complete:
 1. `SuperString reverse(const SuperString&);`
 2. `SuperString replace(int, int, std::string);`
