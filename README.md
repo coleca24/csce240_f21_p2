@@ -75,7 +75,6 @@ Extra Credit Functions:
   - Removes all of the instances of the character that is passed in is in the `data` array
   - Ex. obj.data = "hello" then obj.removeAll('l') -> obj.data == "heo" 
 - `void replace(std::string, std::string)`
-- `void replace(char, std::string)`
 - `bool isUpper()`
 - `bool isLower()`
 - `bool isTitleCase()`
