@@ -1,7 +1,7 @@
 # Project 1 CSCE 240 Fall 2021 (30 points)
 In this project, you will be creating your own string class (called SuperString). At this point we have used the `std::string` object (https://www.cplusplus.com/reference/string/string/) in C++ quite a bit. You should now have an idea of how to use some of the functions it contains (like the find and replace). In this project, you will create an object that mimicks some of this functionality and also builds on it! 
 
-Your SuperString object is already defined for you in the `SuperString.h` file in your GitHub repo. Below I will describe more details about all of the variables and functions. **Make sure that you read this all the way through before starting! There is important information at the end about how to run the code!**
+Your SuperString object is already defined for you in the `SuperString.h` file in your GitHub repo. Below I will describe more details about all of the variables and functions. **Make sure that you read this all the way through before starting! There is important information at the end about how to run the code!** (https://github.com/coleca24/csce240_f21_p2/blob/main/ProjectDescription.md#compiling-and-running-your-code)
 
 ## SuperString member variables: 
 - `char *data`: a dynamic pointer array that holds each character of the string within that SuperString object
@@ -145,11 +145,11 @@ g++ -std=c++2a main-bonus-gtest.cpp SuperString.cpp -lgtest -lpthread -o proj1
 To compile and run your *Extra Credit* code **without** Google Tests: 
 ```
 Windows WSL and Linux: 
-g++ main-bonus.cpp SuperString.cpp -lgtest -lpthread -o proj1
+g++ main-bonus.cpp SuperString.cpp -o proj1
 ./proj1
 
 Mac:
-g++ -std=c++2a main-bonus.cpp SuperString.cpp -lgtest -lpthread -o proj1
+g++ -std=c++2a main-bonus.cpp SuperString.cpp -o proj1
 ./proj1
 ```
 
