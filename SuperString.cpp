@@ -14,7 +14,7 @@ void SuperString::print() {
 }
 
 char SuperString::get(int index) {
-    if (index > 0 && index < size) {
+    if (index >= 0 && index < size) {
         return data[index];
     }
     return '\0';
