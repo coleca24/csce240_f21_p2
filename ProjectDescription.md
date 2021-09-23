@@ -99,16 +99,58 @@ Functions to complete:
 3. `void push_back(char);`
 4. `void append(std::string);`
 5. `void append(const SuperString&);`
-6. `bool removeAll(char);`
+6. `SuperString replace(char, char);`
 
 ### Extra Credit Due 10/6 by Midnight
-1. `SuperString replace(char, char);`
+1. `bool removeAll(char);`
 2. `SuperString replace(std::string, std::string);`
-3. `SuperString replace(char, std::string);`
-4. `bool isUpper();`
-5. `bool isLower();`
-6. `bool isTitleCase();`
+3. `bool isUpper();`
+4. `bool isLower();`
+5. `bool isTitleCase();`
 
 ## Compiling and Running your Code
+To compile and run your code **with** Google Tests: 
+```
+Windows WSL and Linux: 
+g++ main-gtest.cpp SuperString.cpp -lgtest -lpthread -o proj1
+./proj1
+
+Mac:
+g++ -std=c++2a main-gtest.cpp SuperString.cpp -lgtest -lpthread -o proj1
+./proj1
+```
+
+To compile and run your code **without** Google Tests: 
+```
+Windows WSL and Linux: 
+g++ main.cpp SuperString.cpp -o proj1
+./proj1
+
+Mac:
+g++ -std=c++2a main.cpp SuperString.cpp -o proj1
+./proj1
+```
+
+To compile and run your *Extra Credit* code **with** Google Tests: 
+```
+Windows WSL and Linux: 
+g++ main-bonus-gtest.cpp SuperString.cpp -lgtest -lpthread -o proj1
+./proj1
+
+Mac:
+g++ -std=c++2a main-bonus-gtest.cpp SuperString.cpp -lgtest -lpthread -o proj1
+./proj1
+```
+
+To compile and run your *Extra Credit* code **without** Google Tests: 
+```
+Windows WSL and Linux: 
+g++ main-bonus.cpp SuperString.cpp -lgtest -lpthread -o proj1
+./proj1
+
+Mac:
+g++ -std=c++2a main-bonus.cpp SuperString.cpp -lgtest -lpthread -o proj1
+./proj1
+```
 
 ## Grading Rubric
