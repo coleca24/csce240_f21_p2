@@ -17,7 +17,8 @@ enable_testing()
 
 add_executable(
 	  proj2
-	  main-gtest.cpp SuperString.cpp
+	  main-gtest.cpp 
+	  SuperString.cpp
 )
 target_link_libraries(
 	proj2
