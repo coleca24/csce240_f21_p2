@@ -32,12 +32,11 @@ class SuperString {
    //  void push_back(char);
    //  void append(std::string);
    //  void append(const SuperString&);
-   //  void removeAll(char);
+   //  void replace(char, char);
 
    // Extra Credit
-   //  void replace(char, char);
+   //  void removeAll(char);
    //  void replace(std::string, std::string);
-   //  void replace(char, std::string);
    //  bool isUpper();
    //  bool isLower();
    //  bool isTitleCase();
