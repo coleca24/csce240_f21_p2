@@ -57,13 +57,25 @@ Your SuperString object is already defined for you in the `SuperString.h` file i
     - Starting at `index`, the elements of the `data` array are removed up until `index` + `numChar` and replaced with the contents of the passed string `sub`
   - Ex. obj.data = "Hello" then obj.replace(0, 2, "Jal") == ret.data == "Jalllo"
 - `void push_back(char)`
+  - Adds a new character (the one passed in) to the `data` array of the calling object.
+  - Ex. obj.data = "hello" then obj.push_back('w') -> obj.data == "hellow"
 - `void append(std::string)`
+  - Appends the content of the passed string to the end of the `data` array of the calling object
+  - Ex. obj.data = "hello" then obj.append(" world") -> obj.data == "hello world"
 - `void append(const SuperString&)`
+  - Appends the content of the passed `SuperString` to the end of the `data` array of the calling object
+  - Ex. obj.data = "hello" and obj2.data = " world" then obj.append(obj2) -> obj.data == "hello world"
+- `bool removeAll(char)`
+  - Removes all of the instances of the character that is passed in is in the `data` array
+  - Returns true if replacement was successful (character(s) is/are found and removed)
+  - Returns false if character does not exist in the string
+  - Ex. obj.data = "hello" then obj.removeAll('l') -> obj.data == "heo"
 
 Extra Credit Functions:
-- `SuperString replace(char, char)`
-- `SuperString replace(std::string, std::string)`
-- `SuperString replace(char, std::string)`
+- `void replace(char find, char rep)`
+  - Replaces all instances of the character `find` in the calling object's `data` array with the `rep` character. 
+- `void replace(std::string, std::string)`
+- `void replace(char, std::string)`
 - `bool isUpper()`
 - `bool isLower()`
 - `bool isTitleCase()`
