@@ -1,4 +1,4 @@
-# Project 1 CSCE 240 Fall 2021 (30 points)
+# Project 1 CSCE 240 Fall 2021 (40 points)
 In this project, you will be creating your own string class (called SuperString). At this point we have used the `std::string` object (https://www.cplusplus.com/reference/string/string/) in C++ quite a bit. You should now have an idea of how to use some of the functions it contains (like the find and replace). In this project, you will create an object that mimicks some of this functionality and also builds on it! 
 
 Your SuperString object is already defined for you in the `SuperString.h` file in your GitHub repo. Below I will describe more details about all of the variables and functions. **Make sure that you read this all the way through before starting! There is important information at the end about how to run the code!** (https://github.com/coleca24/csce240_f21_p2/blob/main/ProjectDescription.md#compiling-and-running-your-code)
@@ -80,7 +80,7 @@ Extra Credit Functions:
 - `bool isTitleCase()`
 
 ## Timing of Commits
-### Commit #1 Due 9/29 by Midnight
+### Commit #1 Due 9/30 by Midnight
 Functions to complete: 
 1. `SuperString();`
 2. `explicit SuperString(std::string);`
@@ -92,7 +92,7 @@ Functions to complete:
 8. `int find(std::string, int start = 0);`
 9. `SuperString substr(int, int);`
 
-### Commit #1 Due 10/6 by Midnight
+### Commit #1 Due 10/12 by Midnight
 Functions to complete:
 1. `SuperString reverse(const SuperString&);`
 2. `SuperString replace(int, int, std::string);`
