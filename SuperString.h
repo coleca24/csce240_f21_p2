@@ -27,7 +27,7 @@ class SuperString {
    //  int length();
    //  SuperString substr(int, int);
 
-   //  SuperString reverse(const SuperString&);
+   //  SuperString reverse();
    //  SuperString replace(int, int, std::string);
    //  void push_back(char);
    //  void append(std::string);
