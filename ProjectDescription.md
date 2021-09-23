@@ -1,4 +1,4 @@
-# Project 1 CSCE 240 Fall 2021 (40 points)
+# Project 2 CSCE 240 Fall 2021 (40 points)
 In this project, you will be creating your own string class (called SuperString). At this point we have used the `std::string` object (https://www.cplusplus.com/reference/string/string/) in C++ quite a bit. You should now have an idea of how to use some of the functions it contains (like the find and replace). In this project, you will create an object that mimicks some of this functionality and also builds on it! 
 
 Your SuperString object is already defined for you in the `SuperString.h` file in your GitHub repo. Below I will describe more details about all of the variables and functions. **Make sure that you read this all the way through before starting! There is important information at the end about how to run the code!** (https://github.com/coleca24/csce240_f21_p2/blob/main/ProjectDescription.md#compiling-and-running-your-code)
