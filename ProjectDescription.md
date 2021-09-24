@@ -161,6 +161,8 @@ g++ -std=c++2a main-bonus.cpp SuperString.cpp -o proj2
 ./proj2
 ```
 
+For more information about the Google test cases and the non-gtest mains, see: https://github.com/coleca24/csce240_f21_p2/blob/main/Testing.md
+
 ## Submitting your Code to GitHub
 This time, you may modify the header (.h) or the SuperString.cpp or even one of the non-gtest related mains! That means that you may have multiple files to push. Make sure you push them all up if needed.
 
