@@ -28,5 +28,6 @@ jobs:
         ./proj2
     - name: valgrind
       run: |
-        apt install valgrind
+        sudo apt install -y valgrind
+        cd build
         valgrind ./proj2
