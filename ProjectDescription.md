@@ -85,6 +85,8 @@ Extra Credit Functions:
 - `bool isTitleCase()`
   - Returns true if the `data` array contains a sentence that is in proper "Title" case. 
   - Returns false if the `data` array contains contains a sentence that is not in proper "Title" case. 
+  - For this function we are going to simplify the definition of "Title" case to be *every new word in a sentence is capitalized*. 
+  - For example: "This Is Our Modified Title Case" and "This Does Not Count as Title Case" (because of the "as") 
 
 ## Timing of Commits
 ### Commit #1 Due 9/30 by Midnight
@@ -118,53 +120,66 @@ Functions to complete:
 To compile and run your code **with** Google Tests: 
 ```
 Windows WSL and Linux: 
-g++ main-gtest.cpp SuperString.cpp -lgtest -lpthread -o proj1
-./proj1
+g++ main-gtest.cpp SuperString.cpp -lgtest -lpthread -o proj2
+./proj2
 
 Mac:
-g++ -std=c++2a main-gtest.cpp SuperString.cpp -lgtest -lpthread -o proj1
-./proj1
+g++ -std=c++2a main-gtest.cpp SuperString.cpp -lgtest -lpthread -o proj2
+./proj2
 ```
 
 To compile and run your code **without** Google Tests: 
 ```
 Windows WSL and Linux: 
-g++ main.cpp SuperString.cpp -o proj1
-./proj1
+g++ main.cpp SuperString.cpp -o proj2
+./proj2
 
 Mac:
-g++ -std=c++2a main.cpp SuperString.cpp -o proj1
-./proj1
+g++ -std=c++2a main.cpp SuperString.cpp -o proj2
+./proj2
 ```
 
 To compile and run your *Extra Credit* code **with** Google Tests: 
 ```
 Windows WSL and Linux: 
-g++ main-bonus-gtest.cpp SuperString.cpp -lgtest -lpthread -o proj1
-./proj1
+g++ main-bonus-gtest.cpp SuperString.cpp -lgtest -lpthread -o proj2
+./proj2
 
 Mac:
-g++ -std=c++2a main-bonus-gtest.cpp SuperString.cpp -lgtest -lpthread -o proj1
-./proj1
+g++ -std=c++2a main-bonus-gtest.cpp SuperString.cpp -lgtest -lpthread -o proj2
+./proj2
 ```
 
 To compile and run your *Extra Credit* code **without** Google Tests: 
 ```
 Windows WSL and Linux: 
-g++ main-bonus.cpp SuperString.cpp -o proj1
-./proj1
+g++ main-bonus.cpp SuperString.cpp -o proj2
+./proj2
 
 Mac:
-g++ -std=c++2a main-bonus.cpp SuperString.cpp -o proj1
-./proj1
+g++ -std=c++2a main-bonus.cpp SuperString.cpp -o proj2
+./proj2
 ```
+
+## Submitting your Code to GitHub
+This time, you may modify the header (.h) or the SuperString.cpp or even one of the non-gtest related mains! That means that you may have multiple files to push. Make sure you push them all up if needed.
+
+Example for pushing the .h and the SuperString.cpp together
+```
+git pull 
+git add SuperString.h SuperString.cpp
+git commit -m "Added changes to .h and SuperString.cpp"
+git push
+```
+
+Remember, you can use the command `git status` to see what files you have modified since your last pull! 
 
 ## Grading Rubric
 See the Testing.md file (https://github.com/coleca24/csce240_f21_p2/blob/main/Testing.md) for breakdown per Google Test. 
 ### Commit #1 Due 9/30 by Midnight - 15 points
 1. `SuperString();`                               - 1 point
-2. `explicit SuperString(std::string);`           - 1 points
-3. `SuperString(int, char);`                      - 1 points 
+2. `explicit SuperString(std::string);`           - 1 point
+3. `SuperString(int, char);`                      - 1 point
 4. `SuperString(const SuperString&);`             - 2 points
 5. `~SuperString();`                              - 2 points
 6. `int find(char, int start = 0);`               - 2 point
