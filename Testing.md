@@ -43,10 +43,13 @@ The following will outline the different test cases in the Google Test mains.
 
 **Commit1.substrValid**
 - Tests substr(int, int)
-- 
+- Checks that: 
+  - If a valid index and number of characters are passed then the object that is returned from the function has the correct content
 
 **Commit1.substrInvalid**
 - Tests substr(int, int)
+- Checks that: 
+  - If an invalid index and number of characters are passed then the object that is returned from the function has size 0
 
 ### Commit #2 Functions
 **Commit2.reverse**
