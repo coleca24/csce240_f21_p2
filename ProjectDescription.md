@@ -110,7 +110,7 @@ Functions to complete:
 6. `SuperString replace(char, char);`
 
 ### Extra Credit Due 10/6 by Midnight
-1. `bool removeAll(char);`
+1. `void removeAll(char);`
 2. `SuperString replace(std::string, std::string);`
 3. `bool isUpper();`
 4. `bool isLower();`
@@ -199,7 +199,7 @@ See the Testing.md file (https://github.com/coleca24/csce240_f21_p2/blob/main/Te
 1 point for cpplint
 
 ### Extra Credit Due 10/6 by Midnight - 8 points total
-1. `bool removeAll(char);`                            + 2 point
+1. `void removeAll(char);`                            + 2 point
 2. `SuperString replace(std::string, std::string);`   + 2 points
 3. `bool isUpper();`                                  + 1 point
 4. `bool isLower();`                                  + 1 point
