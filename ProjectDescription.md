@@ -1,4 +1,5 @@
 # Project 2 CSCE 240 Fall 2021 (40 points)
+**UPDATE: New due date - ALL commits (1 and 2) are due 10/12 at midnight)**
 In this project, you will be creating your own string class (called SuperString). At this point we have used the `std::string` object (https://www.cplusplus.com/reference/string/string/) in C++ quite a bit. You should now have an idea of how to use some of the functions it contains (like the find and replace). In this project, you will create an object that mimicks some of this functionality and also builds on it! 
 
 Your SuperString object is already defined for you in the `SuperString.h` file in your GitHub repo. Below I will describe more details about all of the variables and functions. **Make sure that you read this all the way through before starting! There is important information at the end about how to run the code!** (https://github.com/coleca24/csce240_f21_p2/blob/main/ProjectDescription.md#compiling-and-running-your-code)
@@ -89,7 +90,8 @@ Extra Credit Functions:
   - For example: "This Is Our Modified Title Case" and "This Does Not Count as Title Case" (because of the "as") 
 
 ## Timing of Commits
-### Commit #1 Due 9/30 by Midnight
+**NEW DUE DATE: ALL COMMITS (1 AND 2) DUE 10/12 AT MIDNIGHT**
+### Commit #1 
 Functions to complete: 
 1. `SuperString();`
 2. `explicit SuperString(std::string);`
@@ -100,7 +102,7 @@ Functions to complete:
 7. `int find(std::string, int start = 0);`
 8. `SuperString substr(int, int);`
 
-### Commit #2 Due 10/6 by Midnight
+### Commit #2
 Functions to complete:
 1. `SuperString reverse(const SuperString&);`
 2. `SuperString replace(int, int, std::string);`
@@ -109,7 +111,7 @@ Functions to complete:
 5. `void append(const SuperString&);`
 6. `SuperString replace(char, char);`
 
-### Extra Credit Due 10/6 by Midnight
+### Extra Credit
 1. `void removeAll(char);`
 2. `SuperString replace(std::string, std::string);`
 3. `bool isUpper();`
@@ -178,7 +180,7 @@ Remember, you can use the command `git status` to see what files you have modifi
 
 ## Grading Rubric
 See the Testing.md file (https://github.com/coleca24/csce240_f21_p2/blob/main/Testing.md) for breakdown per Google Test. 
-### Commit #1 Due 9/30 by Midnight - 15 points
+### Commit #1 15 points
 1. `SuperString();`                               - 1 point
 2. `explicit SuperString(std::string);`           - 1 point
 3. `SuperString(int, char);`                      - 1 point
@@ -188,7 +190,7 @@ See the Testing.md file (https://github.com/coleca24/csce240_f21_p2/blob/main/Te
 7. `int find(std::string, int start = 0);`        - 3 points
 8. `SuperString substr(int, int);`                - 3 points
 
-### Commit #2 Due 10/6 by Midnight - 25 points
+### Commit #2 25 points
 1. `SuperString reverse(const SuperString&);`     - 3 points
 2. `SuperString replace(int, int, std::string);`  - 5 points
 3. `void push_back(char);`                        - 4 points
@@ -198,7 +200,7 @@ See the Testing.md file (https://github.com/coleca24/csce240_f21_p2/blob/main/Te
 
 1 point for cpplint
 
-### Extra Credit Due 10/6 by Midnight - 8 points total
+### Extra Credit 8 points total
 1. `void removeAll(char);`                            + 2 point
 2. `SuperString replace(std::string, std::string);`   + 2 points
 3. `bool isUpper();`                                  + 1 point
